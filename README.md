@@ -43,23 +43,6 @@ and will reply with **“I don’t know”** when data is missing.
 * ✅ Outputs **tables** and neat formatting when possible
 * ✅ Optional **AGNO Agent** with **Gemini + Reasoning Tools**
 
-## 🧠 RAG Flow (Mermaid)
-
-```mermaid
-flowchart LR
-  A[CSV Dataset\nresult.csv] -->|Load & Clean| B[Chunking\nRecursiveCharacterTextSplitter]
-  B --> C[Embedding\nAlibaba-NLP gte-large-en-v1.5]
-  C --> D[Chroma VectorDB]
-  E[User Query] --> F[Retriever]
-  F --> D
-  D -->|Top‑K Chunks| G[LLM: Ollama (Llama2)]
-  G --> H[Structured Answer\n(tables, citations, \"I don't know\")]
-  subgraph Optional Agent Layer
-    I[AGNO Agent] --> F
-    I --> G
-  end
-```
-
 ## 🛠️ Tech Stack
 
 <p>
@@ -89,7 +72,7 @@ flowchart LR
 
 ```bash
 # 1) Clone the repository
-git clone https://github.com/yourusername/academic-assistant.git
+git clone https://github.com/cipherX2433/custom_chatbot_using_llm.git
 cd academic-assistant
 
 # 2) Create & activate a virtual environment
