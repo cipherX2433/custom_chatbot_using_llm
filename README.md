@@ -5,7 +5,7 @@
   </picture>
 </p>
 
-<h1 align="center">📚 Academic Assistant (CSV‑based RAG)</h1>
+<h1 align="center">📚 Academic Assistant</h1>
 
 <p align="center">
   A Retrieval‑Augmented Generation (RAG) assistant for VIT University that answers student queries using
